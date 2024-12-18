@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-with open('instance\column.json' , 'r') as file:
+with open('instance/column.json' , 'r') as file:
     columns = json.load(file)['columns']
 
 with open('model.pkl' , 'rb') as file:
